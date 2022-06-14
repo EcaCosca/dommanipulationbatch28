@@ -31,3 +31,18 @@ document.querySelector('#button').addEventListener('click', ()=>alert("I said no
 const handleButtonClick = () => {
     alert('STOP IT!')
 }
+
+// ADD ELEMENT - APPENDCHILD
+
+// GET THE PARENT ELEMENT and store it in a variable for easy manipulation
+const list = document.querySelector('#list')
+
+const listItemCreator = () => {
+    
+    // CREATE A NEW LIST ITEM
+    let newListItem = document.createElement('li');
+    // change the item innerText
+    newListItem.innerText = "Clean";
+    // APPEND the new item (child) to the unordered list (parent)
+    list.appendChild(newListItem)
+}
