@@ -25,4 +25,9 @@ const sub = document.querySelector('#subheader')
 sub.addEventListener('click', ()=>{
     sub.style.textDecoration = 'line-through'
 })
+
+document.querySelector('#button').addEventListener('click', ()=>alert("I said no"))
  
+const handleButtonClick = () => {
+    alert('STOP IT!')
+}
